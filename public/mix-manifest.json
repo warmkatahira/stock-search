@@ -1,4 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/stock_search.js": "/js/stock_search.js",
+    "/js/data_import.js": "/js/data_import.js",
     "/css/app.css": "/css/app.css"
 }

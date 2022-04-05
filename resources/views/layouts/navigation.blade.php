@@ -12,8 +12,11 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link :href="route('index.stock_search')" :active="request()->routeIs('index.stock_search')">
+                        在庫数検索
+                    </x-nav-link>
+                    <x-nav-link :href="route('index.data_import')" :active="request()->routeIs('index.data_import')">
+                        データ取込
                     </x-nav-link>
                 </div>
             </div>
