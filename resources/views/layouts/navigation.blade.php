@@ -15,6 +15,9 @@
                     <x-nav-link :href="route('index.stock_search')" :active="request()->routeIs('index.stock_search')">
                         在庫数検索
                     </x-nav-link>
+                    <x-nav-link :href="route('index.item_list')" :active="request()->routeIs('index.item_list')">
+                        商品一覧
+                    </x-nav-link>
                     <x-nav-link :href="route('index.data_import')" :active="request()->routeIs('index.data_import')">
                         データ取込
                     </x-nav-link>
