@@ -43,7 +43,15 @@
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-
+                            <x-dropdown-link :href="route('index.stock_search')">
+                                在庫数検索
+                            </x-dropdown-link>
+                            <x-dropdown-link :href="route('index.item_list')">
+                                商品一覧
+                            </x-dropdown-link>
+                            <x-dropdown-link :href="route('index.data_import')">
+                                データ取込
+                            </x-dropdown-link>
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
